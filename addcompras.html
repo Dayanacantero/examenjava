@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Mini</title>
+    <link rel="stylesheet" href="addcompras.css">
+</head>
+<body>
+    <div class="store-container">
+        <h1>Tienda de Productos</h1>
+
+        <div class="products-grid">
+            <div class="product-item" data-id="1">
+                <img src="img/product1.jpg" alt="Producto 1">
+                <h3>Falda Short T : U</h3>
+                <p>Precio: $10.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product2.jpg" alt="Producto 2">
+                <h3>Blusa Básica T : U</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product3.jpeg" alt="Producto 2">
+                <h3>Conjunto rojo </h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product4.webp" alt="Producto 2">
+                <h3>Camisa básica</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product5.webp" alt="Producto 2">
+                <h3>Pantalón Cargo</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product6.jpeg" alt="Producto 2">
+                <h3>Pantalón sin pretina</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product7.webp" alt="Producto 2">
+                <h3>Chaqueta Cuero 1.1</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product8.jpeg" alt="Producto 2">
+                <h3>Chaleco Caballero</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product9.webp" alt="Producto 2">
+                <h3>Tacones T : 34</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product10.webp" alt="Producto 2">
+                <h3>Blazer dama</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+             Más productos -->
+        <!-- </div>
+
+        <h2>Carrito de Compras</h2>
+        <div class="cart">
+            <div class="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+    </div>
+    <script src="addcompras.js"></script>
+</body>
+</html> --> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Mini</title>
+    <link rel="stylesheet" href="addcompras.css">
+</head>
+<body>
+    <div class="store-container">
+        <header>
+            <h1>Tienda de Productos</h1>
+            <button id="cart-button" class="cart-button">
+                🛒 Carrito (<span id="cart-count">0</span>)
+            </button>
+        </header>
+
+        <div class="products-grid">
+            <div class="product-item" data-id="1">
+                <img src="img/product1.jpg" alt="Producto 1">
+                <h3>Falda Short T : U</h3>
+                <p>Precio: $10.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="2">
+                <img src="img/product2.jpg" alt="Producto 2">
+                <h3>Blusa Básica T : U</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="3">
+                <img src="img/product3.jpeg" alt="Producto 3">
+                <h3>Conjunto rojo</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="4">
+                <img src="img/product4.webp" alt="Producto 4">
+                <h3>Camisa básica</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="5">
+                <img src="img/product5.webp" alt="Producto 5">
+                <h3>Pantalón Cargo</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="6">
+                <img src="img/product6.jpeg" alt="Producto 6">
+                <h3>Pantalón sin pretina</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="7">
+                <img src="img/product7.webp" alt="Producto 7">
+                <h3>Chaqueta Cuero 1.1</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="8">
+                <img src="img/product8.jpeg" alt="Producto 8">
+                <h3>Chaleco Caballero</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="9">
+                <img src="img/product9.webp" alt="Producto 9">
+                <h3>Tacones T : 34</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <div class="product-item" data-id="10">
+                <img src="img/product10.webp" alt="Producto 10">
+                <h3>Blazer dama</h3>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart-btn">Agregar al carrito</button>
+            </div>
+            <!-- Más productos -->
+        </div>
+    </div>
+
+    <!-- Sidebar del carrito -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h2>My order</h2>
+            <button id="close-cart" class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-footer">
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="addcompras.js"></script>
+</body>
+</html>
